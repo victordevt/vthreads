@@ -6,6 +6,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 
+
+// -XX:+FlightRecorder -XX:StartFlightRecording=duration=60s,filename=recordingClassic.jfr
+// https://dzone.com/articles/request-handling-approaches-threadpool-webflux-cor
+
 public class Main {
     public static void main(String[] args) throws InterruptedException, IOException {
         runClassicThreads();
